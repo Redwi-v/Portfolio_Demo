@@ -1,0 +1,29 @@
+.alert {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 15px;
+	background-color: rgb(122, 122, 122);
+	visibility: hidden;
+	z-index: -1;
+	opacity: 0;
+
+	.alertText {
+	}
+}
+.open {
+	visibility: visible;
+	z-index: 30;
+	opacity: 1;
+}
+
+.red {
+	background-color: rgb(204, 35, 35);
+}
+.green {
+	background-color: rgb(35, 204, 75);
+}
+.yellow {
+	background-color: rgb(213, 210, 26);
+}

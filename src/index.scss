@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+.main-title {
+	font-size: 21px;
+	margin-bottom: 30px;
+}
+
+.card {
+	background-color: #202020;
+	overflow: hidden;
+	border-radius: 5px;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.22);
+}
+body {
+	background-color: #181818;
+	overflow: hidden;
+}
+
+.App {
+	display: flex;
+}
+
+.rigth-side {
+	width: 100%;
+}
+
+.main {
+	padding: 50px 50px;
+	overflow-y: auto;
+	height: 100vh;
+	scrollbar-width: thin;
+
+	@media (max-width: 800px) {
+		padding: 20px 20px;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Roboto';
+	color: #fff;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+	text-transform: inherit;
+	font-size: inherit;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	font-size: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+a,
+button {
+	text-decoration: none;
+	color: inherit;
+	background: none;
+}

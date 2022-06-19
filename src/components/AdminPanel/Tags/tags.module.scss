@@ -1,0 +1,20 @@
+.tagsList {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 400px;
+}
+
+.tag {
+	background-color: rgb(100, 100, 100);
+	padding: 5px 8px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 10px;
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.selected {
+	background-color: rgb(217, 157, 36);
+}

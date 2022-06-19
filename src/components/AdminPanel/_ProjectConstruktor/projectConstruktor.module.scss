@@ -1,0 +1,164 @@
+.loagdin_scrееn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(17, 17, 17, 0.664);
+	top: 0;
+	left: 0;
+	display: none;
+
+	span {
+		display: block;
+		margin-top: 20%;
+		font-size: 24px;
+	}
+}
+
+.sending {
+	display: block;
+}
+.project {
+	padding: 16px 25px;
+	max-width: 900px;
+
+	margin: 0 auto;
+
+	.interactio {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		opacity: 60%;
+		margin-bottom: 15px;
+	}
+
+	.title {
+		font-size: 18px;
+	}
+
+	.date {
+		color: #828282;
+		font-size: 12px;
+		margin-bottom: 30px;
+	}
+
+	input {
+		background-color: #333;
+	}
+
+	textarea {
+		background: none;
+		width: 100%;
+		resize: vertical;
+		overflow: hidden;
+		display: inline-block;
+		padding: 15px 0;
+		min-height: 100%;
+	}
+
+	li {
+		height: 100%;
+		margin-bottom: 10px;
+	}
+
+	.controls {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+		button {
+			margin: 10px 10px;
+			padding: 10px 15px;
+			background-color: rgb(46, 46, 46);
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.182);
+			transition: background-color 0.2s ease;
+			&:hover {
+				background-color: rgb(59, 59, 59);
+			}
+		}
+	}
+
+	.tags_list {
+		display: flex;
+		margin-top: 40px;
+
+		.tag {
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+			background-color: #ea8c1e;
+			padding: 5px 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	}
+}
+
+.prevImage {
+	min-width: 100px;
+	min-height: 100px;
+	width: 100%;
+}
+
+.github {
+	display: inline-block;
+
+	margin-top: 10px;
+	font-weight: 300;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.gitPoopUp {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.gitLinkInput {
+		display: block;
+
+		color: #111;
+		padding: 8px 10px;
+		border-radius: 5px;
+		max-width: 250px;
+	}
+
+	.gitTitle {
+		font-size: 16px;
+		display: inline-block;
+		margin: 10px 14px;
+	}
+
+	.sendButton {
+		margin-top: 0;
+
+		&:disabled {
+			opacity: 0.4;
+
+			&:hover {
+				background-color: #222;
+			}
+		}
+	}
+}
+
+.container {
+	overflow-y: auto;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 15px 40px;
+}
+
+.sendButton {
+	display: block;
+	width: 100%;
+	margin: 30px auto;
+	padding: 20px 0;
+	background-color: #222;
+	transition: background 0.3s;
+	border-radius: 4px;
+	max-width: 900px;
+	&:hover {
+		background-color: #333;
+	}
+}

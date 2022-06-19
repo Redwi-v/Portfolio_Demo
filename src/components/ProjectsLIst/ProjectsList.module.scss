@@ -1,0 +1,29 @@
+.projects_list {
+	max-width: 2000px;
+	margin: 0 auto;
+
+	.project_prev:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+.pages {
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	overflow-x: auto;
+	scrollbar-width: thin;
+	padding: 20px 0 20px 0;
+	justify-content: center;
+
+	.page {
+		margin: 0 10px 0 0;
+		padding: 10px 15px;
+		background-color: #222;
+		cursor: pointer;
+	}
+
+	.active {
+		background-color: rgb(238, 125, 49);
+	}
+}

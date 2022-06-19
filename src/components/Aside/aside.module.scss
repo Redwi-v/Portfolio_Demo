@@ -1,0 +1,90 @@
+.aside {
+	overflow: hidden;
+	max-width: 300px;
+	background-color: #202020;
+	height: 100vh;
+	box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.245);
+
+	@media (max-width: 800px) {
+		max-width: 250px;
+	}
+	@media (max-width: 700px) {
+		display: none;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.backgroundImage {
+		max-height: 180px;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.avatar {
+		max-width: 100px;
+		max-height: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+		margin-top: -50px;
+		z-index: 100;
+
+		img {
+			border: 2px solid #fff;
+		}
+	}
+
+	.name {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 19px;
+		font-weight: 400;
+	}
+
+	.profession {
+		font-size: 14px;
+		font-weight: 200;
+		text-align: center;
+		color: #dedede;
+		margin-top: 4px;
+	}
+
+	.socialMedia {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin-top: 18px;
+		margin-bottom: 15px;
+	}
+
+	.item {
+		width: 25px;
+		height: 25px;
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+	.tel {
+		display: block;
+		text-align: center;
+	}
+
+	.aboutText {
+		font-size: 12px;
+		text-align: center;
+		padding: 0 20px;
+		line-height: 18px;
+
+		&::after,
+		&::before {
+			content: '';
+			display: block;
+			max-width: 260px;
+			height: 1px;
+			background-color: #1c1c1c;
+			margin: 30px 0;
+		}
+	}
+}
