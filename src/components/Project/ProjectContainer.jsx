@@ -15,7 +15,7 @@ const ProjectContainer = props => {
 
 	useEffect(() => {
 		projectsApi.getProject(projectId).then(res => {
-			setStateProject({ ...projectState, project: { ...res.data.project, ...res.data.projectPrew } });
+			setStateProject({ ...projectState, project: res });
 		});
 	}, [projectId]);
 
